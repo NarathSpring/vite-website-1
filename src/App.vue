@@ -1,14 +1,16 @@
 <template>
-<div>
-  <router-link to="/">First</router-link>
-  <router-link to="/second">Second</router-link>
-</div>
-<router-view />
+  <Topnav />
+  <router-view />
 </template>
 
-<script>
+<script lang="ts">
+import Topnav from "./components/Topnav.vue";
 export default {
   name: "App",
-  components: {}
+  components: {
+    Topnav
+  }
 };
 </script>
+
+<style lang="scss" scoped></style>
