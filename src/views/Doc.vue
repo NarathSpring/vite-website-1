@@ -2,10 +2,19 @@
   <div>
     <div class="content">
       <aside class="aside">
-        <div class="aside-content">目录</div>
+        <div class="aside-content">
+          <h3><router-link to="intro">简 介</router-link></h3>
+          <h4><router-link to="a1">文章 1</router-link></h4>
+          <h4><router-link to="a2">文章 2</router-link></h4>
+          <h4><router-link to="a3">文章 3</router-link></h4>
+          <h4><router-link to="a4">文章 4</router-link></h4>
+          <h4><router-link to="a5">文章 5</router-link></h4>
+        </div>
       </aside>
       <main class="main">
-        <div class="main-content">主要内容</div>
+        <div class="main-content">
+          <router-view />
+        </div>
       </main>
     </div>
   </div>
@@ -27,7 +36,6 @@ export default {};
     border-radius: 10px;
     > .aside-content {
       margin: 16px;
-      border: 1px solid black;
     }
   }
   > .main {
@@ -36,11 +44,7 @@ export default {};
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     border-radius: 10px;
     > .main-content {
-      // position: relative;
-      // width: 100%;
-      // height: 100%;
       margin: 24px;
-      border: 1px solid black;
     }
   }
 }

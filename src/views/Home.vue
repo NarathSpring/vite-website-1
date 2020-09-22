@@ -9,7 +9,7 @@
       </p>
       <p class="actions">
         <a href="https://github.com/NarathSpring" target="blank">GitHub</a> |
-        <router-link to="/doc">Artical</router-link>
+        <router-link to="/doc/intro">Artical</router-link>
       </p>
     </div>
   </div>
