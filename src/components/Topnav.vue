@@ -18,7 +18,7 @@
 import { inject, Ref } from "vue";
 export default {
   setup() {
-    const listVisible = inject<Ref<boolean>>("xxx");
+    const listVisible = inject<Ref<boolean>>("listVisible");
     const toggleList = () => {
       listVisible.value = !listVisible.value;
       console.log(listVisible.value);
@@ -39,6 +39,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   border-radius: 3px;
+  // box-shadow: 0 7px 7px grey;
   > .list {
     display: none;
     width: 24px;

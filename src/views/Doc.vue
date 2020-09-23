@@ -24,7 +24,8 @@
 import { inject, Ref } from "vue";
 export default {
   setup() {
-    const listVisible = inject<Ref<boolean>>("xxx");
+    const listVisible = inject<Ref<boolean>>("listVisible");
+
     return { listVisible };
   }
 };

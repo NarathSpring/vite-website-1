@@ -6,6 +6,7 @@
 <script lang="ts">
 import { provide, ref } from "vue";
 import Topnav from "./components/Topnav.vue";
+import router from "./config/router";
 export default {
   name: "App",
   components: {
@@ -14,7 +15,13 @@ export default {
   setup() {
     const width = document.documentElement.clientWidth;
     const listVisible = ref(width <= 500 ? false : true);
-    provide("xxx", listVisible);
+    provide("listVisible", listVisible);
+
+    router.afterEach(() => {
+      if (width <= 500) {
+        listVisible.value = false;
+      }
+    });
   }
 };
 </script>

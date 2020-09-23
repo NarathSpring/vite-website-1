@@ -24,8 +24,6 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  // background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  // height: 300px;
   border-radius: 3px;
   margin-top: 100px;
   display: flex;
@@ -37,7 +35,6 @@ export default {
     right: 0;
     margin: 0 auto;
     bottom: 30px;
-    // margin-top: 200px;
   }
 }
 </style>
