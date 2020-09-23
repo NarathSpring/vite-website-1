@@ -2,7 +2,7 @@ import { createWebHashHistory, createRouter } from "vue-router";
 import Home from "../views/Home.vue";
 import Doc from "../views/Doc.vue";
 import Intro from "../components/Intro.vue";
-import Article1 from "../components/Article1.vue";
+import Switch from "../lib/Switch.vue";
 import Article2 from "../components/Article2.vue";
 import Article3 from "../components/Article3.vue";
 import Article4 from "../components/Article4.vue";
@@ -18,7 +18,7 @@ const router = createRouter({
       component: Doc,
       children: [
         { path: "intro", component: Intro },
-        { path: "a1", component: Article1 },
+        { path: "switch", component: Switch },
         { path: "a2", component: Article2 },
         { path: "a3", component: Article3 },
         { path: "a4", component: Article4 },

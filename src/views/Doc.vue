@@ -4,7 +4,7 @@
       <aside class="aside" v-if="listVisible">
         <div class="aside-content">
           <h3><router-link to="intro">简 介</router-link></h3>
-          <h4><router-link to="a1">文章 1</router-link></h4>
+          <h4><router-link to="switch">Switch 组件</router-link></h4>
           <h4><router-link to="a2">文章 2</router-link></h4>
           <h4><router-link to="a3">文章 3</router-link></h4>
           <h4><router-link to="a4">文章 4</router-link></h4>
