@@ -1,17 +1,18 @@
 <template>
   <div class="home">
     <div class="banner">
-      <h1>某某某</h1>
-      <h2>The blog of 某某某</h2>
+      <img src="../assets/avatar.jpg" alt="" />
+      <h1>Zelda</h1>
+      <h2>The Legend of Zelda</h2>
       <p>
-        I like video games. I like
-        <strong>"The Legend of Zelda: Breath of the Wild"</strong> the best
+        <strong>"The Legend of Zelda: Breath of the Wild"</strong>
       </p>
-      <p class="actions">
-        <a href="https://github.com/NarathSpring" target="blank">GitHub</a> |
-        <router-link to="/doc/intro">Artical</router-link>
-      </p>
+      <br />
     </div>
+    <p class="actions">
+      <a href="https://github.com/NarathSpring" target="blank">GitHub</a> |
+      <router-link to="/doc/intro">Artical</router-link>
+    </p>
   </div>
 </template>
 
@@ -23,13 +24,20 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  height: 300px;
-  background-color: chocolate;
-  border-radius: 10px;
-  margin-top: 8px;
+  // background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  // height: 300px;
+  border-radius: 3px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  > .actions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 30px;
+    // margin-top: 200px;
+  }
 }
 </style>

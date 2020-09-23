@@ -1,6 +1,9 @@
 <template>
   <div class="topnav">
-    <div class="logo"><strong>Logo</strong></div>
+    <img class="list" src="../assets/icons/C_liebiao.svg" @click="toggleList" />
+    <div class="logo">
+      <strong><router-link to="/">Logo</router-link></strong>
+    </div>
     <div class="menu">
       <ul>
         <li><router-link to="/"> 首 页 </router-link></li>
@@ -12,7 +15,17 @@
 </template>
 
 <script lang="ts">
-export default {};
+import { inject, Ref } from "vue";
+export default {
+  setup() {
+    const listVisible = inject<Ref<boolean>>("xxx");
+    const toggleList = () => {
+      listVisible.value = !listVisible.value;
+      console.log(listVisible.value);
+    };
+    return { toggleList };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -24,7 +37,10 @@ export default {};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 3px;
+  > .list {
+    display: none;
+  }
   > .logo {
     font-size: 24px;
   }
@@ -34,6 +50,21 @@ export default {};
     display: flex;
     justify-content: space-between;
     width: 130px;
+  }
+}
+@media (max-width: 500px) {
+  .topnav {
+    display: block;
+    > .list {
+      display: inline-block;
+      position: absolute;
+      left: 30px;
+      top: 2px;
+      width: 24px;
+    }
+    > .menu {
+      display: none;
+    }
   }
 }
 </style>
