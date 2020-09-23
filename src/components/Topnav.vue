@@ -30,7 +30,8 @@ export default {
 
 <style lang="scss" scoped>
 .topnav {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  height: 2.5rem;
+  background-image: linear-gradient(35deg, #a8acaf 0%, #c9d1d4 100%);
   position: relative;
   padding-left: 50px;
   padding-right: 50px;
@@ -40,6 +41,11 @@ export default {
   border-radius: 3px;
   > .list {
     display: none;
+    width: 24px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   > .logo {
     font-size: 24px;
@@ -54,13 +60,9 @@ export default {
 }
 @media (max-width: 500px) {
   .topnav {
-    display: block;
+    justify-content: center;
     > .list {
       display: inline-block;
-      position: absolute;
-      left: 30px;
-      top: 2px;
-      width: 24px;
     }
     > .menu {
       display: none;

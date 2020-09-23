@@ -12,7 +12,8 @@ export default {
     Topnav
   },
   setup() {
-    const listVisible = ref(false);
+    const width = document.documentElement.clientWidth;
+    const listVisible = ref(width <= 500 ? false : true);
     provide("xxx", listVisible);
   }
 };
