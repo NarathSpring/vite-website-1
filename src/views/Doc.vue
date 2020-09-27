@@ -37,7 +37,7 @@ export default {
   margin-top: 4px;
   > .aside {
     width: 20%;
-    height: 100vh;
+    height: 800px;
     margin-right: 4px;
     background-image: linear-gradient(45deg, #f5f7fa 0%, #c3cfe2 100%);
     border-radius: 3px;
@@ -47,7 +47,7 @@ export default {
   }
   > .main {
     width: 80%;
-    height: 100vh;
+    height: 800px;
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     border-radius: 3px;
     > .main-content {

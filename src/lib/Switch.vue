@@ -1,7 +1,52 @@
 <template>
-  <div>Switch 组件</div>
+  <div class="outer" :class="{ checked: value }" @click="toggle">
+    <span class="inner"></span>
+  </div>
 </template>
 
 <script lang="ts">
-export default {};
+import { ref } from "vue";
+export default {
+  props: {
+    value: Boolean
+  },
+  setup(props, ctx) {
+    // const x = ref(false);
+    const toggle = () => {
+      ctx.emit("value", !props.value);
+    };
+    return { toggle };
+  }
+};
 </script>
+
+<style lang="scss" scoped>
+$h: 22px;
+$h2: $h - 4px;
+.outer {
+  width: $h * 2;
+  height: $h;
+  background-color: grey;
+  border-radius: $h / 2;
+  margin: 0 auto;
+  position: relative;
+  > .inner {
+    width: $h2;
+    height: $h2;
+    background-color: white;
+    border-radius: $h2 / 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    transition: left 0.2s;
+  }
+}
+div.checked {
+  background: rgb(170, 97, 38);
+}
+div.checked > .inner {
+  left: $h + 2px;
+  background-color: orange;
+}
+</style>

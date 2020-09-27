@@ -8,7 +8,9 @@
       <ul>
         <li><router-link to="/"> 首 页 </router-link></li>
         |
-        <li><router-link to="/doc/intro"> 文 章 </router-link></li>
+        <li><router-link to="/doc/intro"> 组 件 </router-link></li>
+        |
+        <li><router-link to="/articles"> 文 章 </router-link></li>
       </ul>
     </div>
   </div>
@@ -56,7 +58,7 @@ export default {
     padding-right: 10px;
     display: flex;
     justify-content: space-between;
-    width: 130px;
+    width: 200px;
   }
 }
 @media (max-width: 500px) {
