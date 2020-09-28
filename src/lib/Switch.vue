@@ -13,8 +13,9 @@ export default {
   setup(props, ctx) {
     // const x = ref(false);
     const toggle = () => {
-      ctx.emit("value", !props.value);
+      ctx.emit("update:value", !props.value);
     };
+
     return { toggle };
   }
 };

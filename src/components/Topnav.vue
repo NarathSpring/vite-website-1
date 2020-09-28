@@ -23,7 +23,7 @@ export default {
     const listVisible = inject<Ref<boolean>>("listVisible");
     const toggleList = () => {
       listVisible.value = !listVisible.value;
-      console.log(listVisible.value);
+      // console.log(listVisible.value);
     };
     return { toggleList };
   }
