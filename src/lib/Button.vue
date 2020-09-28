@@ -30,3 +30,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+$h: 64px;
+
+.mp-button {
+  width: $h * 2;
+  width: $h;
+}
+</style>
