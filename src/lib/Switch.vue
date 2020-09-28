@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
 .outer {
@@ -34,7 +34,7 @@ $h2: $h - 4px;
   > .inner {
     width: $h2;
     height: $h2;
-    background-color: white;
+    background: white;
     border-radius: $h2 / 2;
     position: absolute;
     top: 50%;
@@ -44,10 +44,12 @@ $h2: $h - 4px;
   }
 }
 div.checked {
-  background: rgb(170, 97, 38);
+  // background: rgb(76, 194, 76);
+  background: orange;
+  // border: 1px solid lightgrey;
 }
 div.checked > .inner {
   left: $h + 2px;
-  background-color: orange;
+  // background-color: orange;
 }
 </style>
