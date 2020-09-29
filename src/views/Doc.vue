@@ -39,7 +39,7 @@ export default {
     width: 20%;
     height: 800px;
     margin-right: 4px;
-    background-image: linear-gradient(45deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: cadetblue;
     border-radius: 3px;
     > .aside-content {
       margin: 16px;
@@ -48,7 +48,7 @@ export default {
   > .main {
     width: 80%;
     height: 800px;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    // background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     border-radius: 3px;
     > .main-content {
       margin: 24px;
@@ -58,7 +58,7 @@ export default {
 @media (max-width: 500px) {
   .content {
     > .aside {
-      width: 65%;
+      width: 150px;
       position: absolute;
       z-index: 1;
     }

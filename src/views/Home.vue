@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <div class="banner">
-      <img src="../assets/avatar.jpg" alt="" />
       <h1>Zelda</h1>
       <h2>The Legend of Zelda</h2>
       <p>
@@ -27,14 +26,8 @@ export default {
   border-radius: 3px;
   margin-top: 100px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  > .actions {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 30px;
-  }
 }
 </style>

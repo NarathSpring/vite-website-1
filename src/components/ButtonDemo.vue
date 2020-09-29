@@ -11,10 +11,14 @@
       loading
       >按钮 1</Button
     > -->
-    <h3>size</h3>
-    <Button size="big"> 大 </Button>
-    <Button> 中 </Button>
-    <Button size="small"> 小 </Button>
+    <div class="btn-size">
+      <h3>size</h3>
+      <div>
+        <Button size="big"> 按钮 <strong>大</strong> </Button>
+        <Button> 按钮 <strong>中</strong> </Button>
+        <Button size="small"> 按钮 <strong>小</strong> </Button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -40,3 +44,16 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.btn-size {
+  // background: cadetblue;
+  > div {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+</style>
