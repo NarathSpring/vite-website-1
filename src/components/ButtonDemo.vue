@@ -19,6 +19,26 @@
         <Button size="small"> 按钮 <strong>小</strong> </Button>
       </div>
     </div>
+
+    <div class="btn-level">
+      <h3>level</h3>
+      <div>
+        <Button size="big"> 默认按钮 </Button>
+        <Button> 主要按钮 </Button>
+        <Button size="small"> 成功按钮 </Button>
+        <Button size="small"> 警告按钮 </Button>
+        <Button size="small"> 危险按钮 </Button>
+      </div>
+    </div>
+
+    <div class="btn-theme">
+      <h3>主题</h3>
+      <div>
+        <Button size="big"> 按钮 <strong>大</strong> </Button>
+        <Button> 按钮 <strong>中</strong> </Button>
+        <Button size="small"> 按钮 <strong>小</strong> </Button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -46,7 +66,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.btn-size {
+.btn-size,
+.btn-level,
+.btn-theme {
   // background: cadetblue;
   > div {
     width: 300px;

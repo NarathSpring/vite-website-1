@@ -27,10 +27,11 @@ $h2: $h - 4px;
 .outer {
   width: $h * 2;
   height: $h;
-  background-color: grey;
+  background: grey;
   border-radius: $h / 2;
   margin: 0 auto;
   position: relative;
+  transition: 0.2s;
   > .inner {
     width: $h2;
     height: $h2;
@@ -40,7 +41,7 @@ $h2: $h - 4px;
     top: 50%;
     transform: translateY(-50%);
     left: 2px;
-    transition: left 0.2s;
+    transition: 0.2s;
   }
 }
 div.checked {
