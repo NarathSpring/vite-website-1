@@ -23,20 +23,19 @@
     <div class="btn-level">
       <h3>level</h3>
       <div>
-        <Button size="big"> 默认按钮 </Button>
-        <Button> 主要按钮 </Button>
-        <Button size="small"> 成功按钮 </Button>
-        <Button size="small"> 警告按钮 </Button>
-        <Button size="small"> 危险按钮 </Button>
+        <Button level="default"> 默认按钮 </Button>
+        <Button level="primary"> 主要按钮 </Button>
+        <Button level="success"> 成功按钮 </Button>
+        <Button level="warning"> 警告按钮 </Button>
+        <Button level="danger"> 危险按钮 </Button>
       </div>
     </div>
 
     <div class="btn-theme">
       <h3>主题</h3>
       <div>
-        <Button size="big"> 按钮 <strong>大</strong> </Button>
-        <Button> 按钮 <strong>中</strong> </Button>
-        <Button size="small"> 按钮 <strong>小</strong> </Button>
+        <Button theme="light"> 一般主题 </Button>
+        <Button theme="dark"> 暗黑主题 </Button>
       </div>
     </div>
   </div>

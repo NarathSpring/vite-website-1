@@ -15,14 +15,19 @@ export default {
     theme: {
       type: String,
       default: "light"
+    },
+    level: {
+      type: String,
+      default: "default"
     }
   },
   setup(props, ctx) {
-    const { size, theme } = props;
+    const { size, theme, level } = props;
     const classes = computed(() => {
       return {
         [`mp-button--${size}`]: size,
-        [`mp-button__${theme}`]: theme
+        [`mp-button__${theme}`]: theme,
+        [`mp-button__${level}`]: level
       };
     });
 
@@ -32,27 +37,23 @@ export default {
 </script>
 
 <style lang="scss">
-$fontSize: 14px;
-$color: #333;
-$border-color: #d9d9d9;
-$orange: #ffa500;
-$radius: 4px;
+@import "index";
 
 .mp-button {
   cursor: pointer;
   box-sizing: border-box;
-  font-size: $fontSize;
+  font-size: $FontSize;
   padding: 10px 20px;
-  border: 1px solid $border-color;
-  color: #333;
-  border-radius: $radius;
+  border: 1px solid $LightPrimaryColor;
+  color: $PrimaryText;
+  border-radius: $BorderRadius;
   white-space: nowrap;
   box-shadow: 0 1px 0 fade-out(black, 0.95);
   transition: 0.2s;
   &:hover,
   &:focus {
-    color: $orange;
-    border-color: $orange;
+    color: $AccentColor;
+    border-color: $AccentColor;
   }
   &:focus {
     outline: none;
@@ -63,15 +64,15 @@ $radius: 4px;
 }
 
 .mp-button--big {
-  // font-size: $fontSize + 2px;
   padding: 12px 24px;
 }
 .mp-button--small {
-  // font-size: $fontSize - 2px;
   padding: 8px 16px;
 }
 .mp-button__light {
 }
 .mp-button__dark {
+  background: $DarkPrimaryColor;
+  color: $AccentColor;
 }
 </style>
